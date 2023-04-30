@@ -29,3 +29,18 @@ function showCollection(){
     
 }
 showCollection(collection);
+
+function findByArtist( artist){
+   let Resultsartist = []
+        for(i=0; i < collection.length; i++){
+          if(collection[i].artist === artist ){
+            Resultsartist.push(collection[i]);
+          return Resultsartist
+          }
+        }
+      }
+
+console.log(findByArtist('Drake'));
+console.log(findByArtist('Majid'));
+//I was so confused with the instructions of this assignment. I understand we are building
+// on our knowledge but the instructions are hard to follow
